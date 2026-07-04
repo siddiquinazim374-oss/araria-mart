@@ -10,6 +10,7 @@ const products = [
     { id: 6, name: "Phone Case", price: 499, image: "https://images.unsplash.com/photo-1601784551446-20c9e07cdbdb?w=200&h=200&fit=crop" },
     { id: 7, name: "Bluetooth Speaker", price: 1799, image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=200&h=200&fit=crop" },
     { id: 8, name: "Gaming Mouse", price: 1299, image: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=200&h=200&fit=crop" }
+    { id: 9, name: "Baggi T-Shirt", price: 199, image: "https://via.placeholder.com/200" },
 ];
 
 // =====================
