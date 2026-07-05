@@ -31,9 +31,9 @@ const products = [
         name: "Hijabi Dupatta", 
         price: 249, 
         quantity: 3,
-        image: "https://i.postimg.cc/tJVFb6qx/Screenshot-2026-07-05-14-30-22-88-2c94496c64eeaa7ef093c298145d7980.jpg",
+        image: https://i.postimg.cc/yNk5MVg3/studio-product-photo-on-a-clean-white-background.png
         images: [
-            "https://i.postimg.cc/tJVFb6qx/Screenshot-2026-07-05-14-30-22-88-2c94496c64eeaa7ef093c298145d7980.jpg"
+            https://i.postimg.cc/yNk5MVg3/studio-product-photo-on-a-clean-white-background.png
         ]
     }
 ];
