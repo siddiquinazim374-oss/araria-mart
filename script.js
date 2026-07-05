@@ -11,7 +11,20 @@ const products = [
     { id: 7, name: "Bluetooth Speaker", price: 1799, image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=200&h=200&fit=crop" },
     { id: 8, name: "Gaming Mouse", price: 1299, image: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=200&h=200&fit=crop" },
     { id: 9, name: "Baggi T-Shirt", price: 199, image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=200&h=200&fit=crop" },
-    { id: 10, name: "Handloom Lungi", price: 599, image: "https://i.postimg.cc/tJVFb6qx/ScreenShot-2026-07-05-14-30-22-88-2c94496c64eeaa7ef093c298145d7980.jpg" }
+    { 
+    id: 10, 
+    name: "Handloom Lungi", 
+    price: 599, 
+    brand: "360",
+    quantity: 2,
+    image: "https://i.postimg.cc/tJVFb6qx/Screenshot-2026-07-05-14-30-22-88-2c94496c64eeaa7ef093c298145d7980.jpg",
+    images: [
+        "https://i.postimg.cc/tJVFb6qx/Screenshot-2026-07-05-14-30-22-88-2c94496c64eeaa7ef093c298145d7980.jpg",
+        "https://i.postimg.cc/MX2VpGHH/Screenshot-2026-07-05-14-30-26-52-2c94496c64eeaa7ef093c298145d7980.jpg",
+        "https://i.postimg.cc/LhKL8s5q/Screenshot-2026-07-05-14-30-38-57-2c94496c64eeaa7ef093c298145d7980.jpg",
+        "https://i.postimg.cc/23RhS5yb/Screenshot-2026-07-05-14-30-45-47-2c94496c64eeaa7ef093c298145d7980.jpg"
+    ]
+},
 ];
 
 // =====================
