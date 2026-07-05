@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Araria Mart - Premium Shopping</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+    <!-- ========== NAVBAR ========== -->
+    <header class="navbar">
+        <div class="container nav-container">
+            <div class="logo">🛒 <span>Araria</span> Mart</div>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="🔍 Search products..." onkeyup="searchProducts()">
+            </div>
+            <ul class="nav-links">
+                <li><a href="#" onclick="showPage('home')">Home</a></li>
+                <li><a href="#" onclick="showPage('products')">Products</a></li>
+                <li><a href="#" onclick="showPage('cart')">Cart (<span id="cartCount">0</span>)</a></li>
+                <li><a href="#" onclick="showPage('login')" id="loginBtn">Login</a></li>
+                <li><a href="#" onclick="logout()" id="logoutBtn" style="display:none;">Logout</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <!-- ========== HERO ========== -->
+    <section id="homePage" class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <span class="badge">🔥 New Arrival</span>
+                <h1>Elevate Your <br /><span class="gradient-text">Everyday Shopping</span></h1>
+                <p>Discover premium products, exclusive deals, and an unmatched shopping experience. Araria Mart brings the best right to your doorstep.</p>
+                <div class="hero-buttons">
+                    <a href="#" onclick="showPage('products')" class="btn btn-primary">Shop Now →</a>
+                </div>
+                <div class="hero-stats">
+                    <div><strong>10K+</strong> Products</div>
+                    <div><strong>5K+</strong> Happy Customers</div>
+                    <div><strong>4.8★</strong> Rating</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== PRODUCTS PAGE ========== -->
+    <section id="productsPage" style="display:none;" class="products">
+        <div class="container">
+            <h2 class="section-title">All <span class="gradient-text">Products</span></h2>
+            <div class="product-grid" id="productGrid">
+                <!-- Products will be loaded by JavaScript -->
+            </div>
+        </div>
+    </section>
+
+    <!-- ========== CART PAGE ========== -->
+    <section id="cartPage" style="display:none;" class="cart-section">
+        <div class="container">
+            <h2 class="section-title">Your <span class="gradient-text">Cart</span></h2>
+            <div id="cartItems"></div>
+            <div id="cartTotal"></div>
+            <button class="btn btn-primary" onclick="checkout()">Proceed to Checkout</button>
+        </div>
+    </section>
+
+    <!-- ========== CHECKOUT PAGE ========== -->
+    <section id="checkoutPage" style="display:none;" class="checkout-section">
+        <div class="container">
+            <h2 class="section-title">Checkout</h2>
+            <form id="orderForm">
+                <input type="text" id="fullName" placeholder="Full Name" required>
+                <input type="tel" id="phone" placeholder="Phone Number" required>
+                <textarea id="address" placeholder="Delivery Address (House, Street, City, Pincode)" required></textarea>
+                <select id="paymentMethod" required>
+                    <option value="">Select Payment Method</option>
+                    <option value="COD">Cash on Delivery</option>
+                    <option value="Online">Online Payment</option>
+                </select>
+                <button type="submit" class="btn btn-primary">Place Order</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- ========== LOGIN PAGE ========== -->
+    <section id="loginPage" style="display:none;" class="login-section">
+        <div class="container">
+            <h2 class="section-title">Login / <span class="gradient-text">Signup</span></h2>
+            <form id="loginForm">
+                <input type="text" id="loginUsername" placeholder="Username" required>
+                <input type="password" id="loginPassword" placeholder="Password" required>
+                <button type="submit" class="btn btn-primary">Login</button>
+                <p>Don't have account? <a href="#" onclick="showSignup()">Signup</a></p>
+            </form>
+            <form id="signupForm" style="display:none;">
+                <input type="text" id="signupUsername" placeholder="Choose Username" required>
+                <input type="password" id="signupPassword" placeholder="Choose Password" required>
+                <button type="submit" class="btn btn-primary">Signup</button>
+                <p>Already have account? <a href="#" onclick="showLogin()">Login</a></p>
+            </form>
+        </div>
+    </section>
+
+    <!-- ========== FOOTER ========== -->
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h3>🛒 Araria Mart</h3>
+                <p>Premium products at best prices.</p>
+                <p>📍 Araria, Bihar, India</p>
+                <p>📞 <strong>+91 9905823282</strong></p>
+                <p>📧 <strong>siddiquinazim374@gmail.com</strong></p>
+            </div>
+            <div>
+                <h4>Quick Links</h4>
+                <a href="#" onclick="showPage('products')">Products</a>
+                <a href="#" onclick="showPage('cart')">Cart</a>
+            </div>
+            <div>
+                <h4>Contact</h4>
+                <p>📧 support@arariamart.com</p>
+                <p>📞 +91 98765 43210</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>© 2026 Araria Mart. All rights reserved. Made with ❤️</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+                      </html>
