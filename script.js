@@ -11,7 +11,16 @@ const products = [
     { id: 7, name: "Bluetooth Speaker", price: 1799, image: "https://images.unsplash.com/photo-1608043152269-423dbba4e7e1?w=200&h=200&fit=crop" },
     { id: 8, name: "Gaming Mouse", price: 1299, image: "https://images.unsplash.com/photo-1527864550417-7fd91fc51a46?w=200&h=200&fit=crop" },
     { id: 9, name: "Baggi T-Shirt", price: 199, image: "https://images.unsplash.com/photo-1521572163474-6864f9cf17ab?w=200&h=200&fit=crop" },
-    { id: 11, name: "Hijabi Dupatta", price: 249, quantity: 3, image: "YAHAN_IMAGE_LINK_DAALEIN" },
+    { 
+    id: 11, 
+    name: "Hijabi Dupatta", 
+    price: 249, 
+    quantity: 3,
+    image: "https://i.postimg.cc/tJVFb6qx/Screenshot-2026-07-05-14-30-22-88-2c94496c64eeaa7ef093c298145d7980.jpg",
+    images: [
+        "https://i.postimg.cc/tJVFb6qx/Screenshot-2026-07-05-14-30-22-88-2c94496c64eeaa7ef093c298145d7980.jpg"
+    ]
+},
     { 
         id: 10, 
         name: "Handloom Lungi", 
