@@ -52,39 +52,67 @@
         </div>
     </section>
 
-    <!-- ===== PRODUCT DETAIL PAGE ===== -->
-    <section id="productDetailPage" style="display:none;" class="product-detail">
-        <div class="container">
-            <div class="product-detail-grid">
-                <div class="product-images-section">
-                    <img src="" alt="Product" id="detailMainImage" class="detail-main-image">
-                    <div class="detail-thumbnails" id="detailThumbnails"></div>
+<!-- ===== PRODUCT DETAIL PAGE (MEESHO STYLE) ===== -->
+<section id="productDetailPage" style="display:none;" class="product-detail">
+    <div class="container">
+        <div class="product-detail-grid">
+            <!-- LEFT: IMAGES -->
+            <div class="product-images-section">
+                <img src="" alt="Product" id="detailMainImage" class="detail-main-image">
+                <div class="detail-thumbnails" id="detailThumbnails"></div>
+            </div>
+            
+            <!-- RIGHT: PRODUCT INFO -->
+            <div class="product-info-section">
+                <h2 id="detailName">Product Name</h2>
+                
+                <!-- Rating -->
+                <div class="rating-section">
+                    <span class="rating">⭐ 4.1 ★</span>
+                    <span class="rating-count">(14,171) Trusted</span>
                 </div>
-                <div class="product-info-section">
-                    <h2 id="detailName">Product Name</h2>
-                    <div class="price-section">
-                        <span class="detail-price" id="detailPrice">₹0</span>
-                        <span class="detail-mrp" id="detailMrp">₹0</span>
-                        <span class="detail-discount" id="detailDiscount">0% off</span>
-                    </div>
-                    <div class="offer-section">
-                        <p class="upi-offer">✅ UPI Offer applied for you!!</p>
-                        <p class="cod-price">💵 ₹<span id="detailCodPrice">0</span> with COD</p>
-                    </div>
-                    <div class="timer-section">
-                        <p>⏰ Deal ends in</p>
-                        <div class="timer" id="detailTimer">02h : 04m : 08s</div>
-                    </div>
-                    <div class="detail-actions">
-                        <button class="btn-add" onclick="addToCartFromDetail()">🛒 Add to Cart</button>
-                        <button class="btn-add" style="background:#10b981;" onclick="buyNowFromDetail()">⚡ Buy Now</button>
-                    </div>
-                    <p class="stock-info">📦 Stock: <span id="detailStock">0</span> left</p>
-                    <button onclick="showPage('products')" class="btn-secondary" style="margin-top:10px;">← Back to Products</button>
+                
+                <!-- Price -->
+                <div class="price-section">
+                    <span class="detail-price" id="detailPrice">₹0</span>
+                    <span class="detail-mrp" id="detailMrp">₹0</span>
+                    <span class="detail-discount" id="detailDiscount">0% off</span>
                 </div>
+                
+                <!-- UPI Offer -->
+                <div class="offer-section">
+                    <p class="upi-offer">✅ UPI Offer applied for you!!</p>
+                    <p class="cod-price">💵 ₹<span id="detailCodPrice">0</span> with Meesho Pay Later</p>
+                </div>
+                
+                <!-- Size Selection -->
+                <div class="size-section">
+                    <p>📏 Select Size</p>
+                    <div class="size-options" id="sizeOptions">
+                        <button class="size-btn" onclick="selectSize('S')">S</button>
+                        <button class="size-btn" onclick="selectSize('M')">M</button>
+                        <button class="size-btn" onclick="selectSize('L')">L</button>
+                        <button class="size-btn" onclick="selectSize('XL')">XL</button>
+                        <button class="size-btn" onclick="selectSize('XXL')">XXL</button>
+                    </div>
+                    <p class="size-price" id="sizePrice">₹276 ₹296 ₹306 ₹316 ₹326</p>
+                </div>
+                
+                <!-- Buttons -->
+                <div class="detail-actions">
+                    <button class="btn-add" onclick="addToCartFromDetail()">🛒 Add to Cart</button>
+                    <button class="btn-add" style="background:#10b981;" onclick="buyNowFromDetail()">⚡ Buy Now</button>
+                </div>
+                
+                <!-- Stock -->
+                <p class="stock-info">📦 Stock: <span id="detailStock">0</span> left</p>
+                
+                <!-- Back -->
+                <button onclick="showPage('products')" class="btn-secondary" style="margin-top:10px;">← Back to Products</button>
             </div>
         </div>
-    </section>
+    </div>
+</section>
 
     <!-- ===== CART ===== -->
     <section id="cartPage" style="display:none;" class="cart-section">
