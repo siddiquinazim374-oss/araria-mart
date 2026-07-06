@@ -46,6 +46,16 @@ const products = [
     images: [
         "https://i.postimg.cc/zD4VxN2z/Screenshot-2026-07-06-07-16-14-93-2c94496c64eeaa7ef093c298145d7980.jpg"
     ]
+},
+    { 
+    id: 13, 
+    name: "Yellow Lungi", 
+    price: 199, 
+    quantity: 1,
+    image: "https://i.postimg.cc/fbCGMc1H/Screenshot-2026-07-06-17-23-37-14-2c94496c64eeaa7ef093c298145d7980.jpg",
+    images: [
+        "https://i.postimg.cc/fbCGMc1H/Screenshot-2026-07-06-17-23-37-14-2c94496c64eeaa7ef093c298145d7980.jpg"
+    ]
 }
 ];
 
