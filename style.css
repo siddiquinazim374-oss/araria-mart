@@ -554,3 +554,62 @@ form textarea {
         grid-template-columns: 1fr;
     }
   }
+/* ===== MEESHO STYLE PRODUCT DETAIL ===== */
+.rating-section {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin: 8px 0;
+}
+
+.rating {
+    background: #1a9c2e;
+    color: #fff;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.rating-count {
+    color: #6b7280;
+    font-size: 14px;
+}
+
+.size-section {
+    margin: 15px 0;
+}
+
+.size-options {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin: 8px 0;
+}
+
+.size-btn {
+    padding: 8px 16px;
+    border: 1px solid #e5e7eb;
+    border-radius: 6px;
+    background: #fff;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: 500;
+}
+
+.size-btn:hover {
+    border-color: #6366f1;
+    background: #eef2ff;
+}
+
+.size-btn.active {
+    border-color: #6366f1;
+    background: #6366f1;
+    color: #fff;
+}
+
+.size-price {
+    font-size: 14px;
+    color: #6b7280;
+    margin-top: 6px;
+        }
