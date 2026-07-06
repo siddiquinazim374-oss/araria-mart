@@ -35,7 +35,18 @@ const products = [
         images: [
             "https://i.postimg.cc/yNk5MVg3/studio-product-photo-on-a-clean-white-background.png"
         ]
-    }
+    },
+    { 
+    id: 12, 
+    name: "White Lungi", 
+    price: 199, 
+    size: "2 Metre",
+    quantity: 5,
+    image: "https://i.postimg.cc/zD4VxN2z/Screenshot-2026-07-06-07-16-14-93-2c94496c64eeaa7ef093c298145d7980.jpg",
+    images: [
+        "https://i.postimg.cc/zD4VxN2z/Screenshot-2026-07-06-07-16-14-93-2c94496c64eeaa7ef093c298145d7980.jpg"
+    ]
+}
 ];
 
 // =====================
