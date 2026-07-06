@@ -435,3 +435,45 @@ window.onload = function() {
     }
     updateCartCount();
 };
+// =====================
+// SIZE SELECTION (MEESHO STYLE)
+// =====================
+let selectedSize = 'M';
+
+function selectSize(size) {
+    selectedSize = size;
+    document.querySelectorAll('.size-btn').forEach(btn => {
+        btn.classList.remove('active');
+        if (btn.textContent === size) btn.classList.add('active');
+    });
+}
+
+// =====================
+// UPDATE SIZE PRICE IN DETAIL PAGE
+// =====================
+function updateSizePrice(productId) {
+    const product = products.find(p => p.id === productId);
+    if (!product) return;
+    
+    const sizePrices = {
+        'S': product.price - 20,
+        'M': product.price,
+        'L': product.price + 10,
+        'XL': product.price + 20,
+        'XXL': product.price + 30
+    };
+    
+    const sizePriceEl = document.getElementById('sizePrice');
+    if (sizePriceEl) {
+        sizePriceEl.textContent = `₹${sizePrices.S} ₹${sizePrices.M} ₹${sizePrices.L} ₹${sizePrices.XL} ₹${sizePrices.XXL}`;
+    }
+}
+
+// =====================
+// OVERRIDE showProductDetail WITH SIZE
+// =====================
+const originalShowProductDetail = showProductDetail;
+showProductDetail = function(productId) {
+    originalShowProductDetail(productId);
+    updateSizePrice(productId);
+};
