@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Araria Mart</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="container">
+        <!-- Header -->
+        <header>
+            <h1>🛒 Araria Mart</h1>
+            <p>Browse and order your favorite products</p>
+        </header>
+
+        <!-- Search -->
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="🔍 Search products..." />
+        </div>
+
+        <!-- Product Grid -->
+        <div id="productGrid" class="product-grid"></div>
+
+        <!-- ========================================== -->
+        <!-- ADD PRODUCT - NECHE (Pahle jaisa)          -->
+        <!-- ========================================== -->
+        <hr class="section-divider" />
+        
+        <div id="addProductSection" class="add-product-section">
+            <div class="add-product-header">
+                <h2>🛒 Add New Product</h2>
+                <span class="badge">Quick Add</span>
+            </div>
+            
+            <div class="add-product-form">
+                <input type="text" id="newName" placeholder="Product Name *" />
+                <input type="number" id="newPrice" placeholder="Price (₹) *" />
+                <input type="text" id="newDetail" placeholder="Detail (Size, Qty)" />
+                <input type="text" id="newImage" placeholder="Image URL (optional)" />
+                <button id="saveProductBtn">✅ Add Product</button>
+            </div>
+            <div id="addMsg" class="add-msg"></div>
+        </div>
+    </div>
+
+    <!-- Modal -->
+    <div id="productModal" class="modal">
+        <div class="modal-content">
+            <span id="close-modal" class="close">&times;</span>
+            <img id="modalImage" src="" alt="Product" />
+            <h2 id="modalName"></h2>
+            <p id="modalPrice" class="modal-price"></p>
+            <p id="modalDetail" class="modal-detail"></p>
+            
+            <div class="order-form">
+                <h3>📦 Place Order</h3>
+                <input type="text" id="buyerName" placeholder="Your Name *" />
+                <input type="tel" id="buyerPhone" placeholder="Phone Number *" />
+                <textarea id="buyerAddress" placeholder="Delivery Address *" rows="3"></textarea>
+                <button id="buyNowBtn">📤 Buy Now</button>
+                <div id="orderStatus" class="order-status"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+                  </html>
