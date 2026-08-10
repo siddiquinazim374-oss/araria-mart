@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Admin - Araria Mart</title>
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        /* ============================================
+           ADMIN PANEL STYLES
+           ============================================ */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #f4f6f9;
+            color: #2c3e50;
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        /* HEADER */
+        header {
+            text-align: center;
+            padding: 25px 20px;
+            background: linear-gradient(135deg, #1a237e, #ff6f00);
+            color: white;
+            border-radius: 16px;
+            margin-bottom: 30px;
+        }
+
+        header h1 {
+            font-size: 28px;
+            margin-bottom: 8px;
+        }
+
+        header p {
+            font-size: 16px;
+            opacity: 0.85;
+        }
+
+        /* ADMIN PANEL */
+        .admin-panel {
+            max-width: 100%;
+            margin: 0 auto 30px;
+            padding: 25px;
+            background: white;
+            border-radius: 16px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+
+        .admin-panel h2 {
+            color: #1a237e;
+            margin-top: 0;
+            margin-bottom: 15px;
+            font-size: 22px;
+            border-bottom: 2px solid #ff6f00;
+            padding-bottom: 10px;
+        }
+
+        /* FORM */
+        .admin-form {
+            display: flex;
+            flex-direction: column;
+            gap: 12px;
+            margin-bottom: 25px;
+        }
+
+        .admin-form input {
+            padding: 12px 16px;
+            border: 2px solid #ddd;
+            border-radius: 8px;
+            font-size: 16px;
+            transition: border-color 0.3s ease;
+        }
+
+        .admin-form input:focus {
+            border-color: #ff6f00;
+            outline: none;
+        }
+
+        .admin-form button {
+            padding: 14px;
+            background: linear-gradient(135deg, #1a237e, #ff6f00);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            cursor: pointer;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            margin-top: 5px;
+        }
+
+        .admin-form button:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 15px rgba(255, 111, 0, 0.4);
+        }
+
+        /* STATUS MESSAGE */
+        .status-msg {
+            padding: 12px 16px;
+            border-radius: 8px;
+            margin: 10px 0;
+            display: none;
+            font-weight: 500;
+        }
+
+        .status-msg.success {
+            background: #d4edda;
+            color: #155724;
+            display: block;
+        }
+
+        .status-msg.error {
+            background: #f8d7da;
+            color: #721c24;
+            display: block;
+        }
+
+        .status-msg.info {
+            background: #d1ecf1;
+            color: #0c5460;
+            display: block;
+        }
+
+        /* PRODUCT LIST */
+        .product-list-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 15px 0 10px;
+        }
+
+        .product-count {
+            background: #1a237e;
+            color: white;
+            padding: 4px 14px;
+            border-radius: 20px;
+            font-size: 14px;
+        }
+
+        #productList {
+            margin-top: 10px;
+        }
+
+        .product-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 12px 14px;
+            border-bottom: 1px solid #eee;
+            transition: background 0.2s ease;
+            gap: 10px;
+        }
+
+        .product-item:hover {
+            background: #f8f9fa;
+        }
+
+        .product-item .product-info {
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            flex: 1;
+        }
+
+        .product-item .product-name {
+            font-weight: 600;
+            font-size: 16px;
+        }
+
+        .product-item .product-meta {
+            font-size: 14px;
+            color: #888;
+        }
+
+        .product-item .product-price {
+            color: #27ae60;
+            font-weight: 600;
+        }
+
+        .product-item .btn-delete {
+            background: #e74c3c;
+            color: white;
+            border: none;
+            padding: 6px 16px;
+            border-radius: 6px;
+            cursor: pointer;
+            font-size: 14px;
+            transition: background 0.3s ease;
+            flex-shrink: 0;
+        }
+
+        .product-item .btn-delete:hover {
+            background: #c0392b;
+        }
+
+        /* EMPTY STATE */
+        .empty-state {
+            text-align: center;
+            padding: 30px 20px;
+            color: #888;
+        }
+
+        .empty-state .icon {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        /* RESPONSIVE */
+        @media (max-width: 600px) {
+            body {
+                padding: 12px;
+            }
+
+            header h1 {
+                font-size: 22px;
+            }
+
+            .admin-panel {
+                padding: 18px;
+            }
+
+            .product-item {
+                flex-wrap: wrap;
+            }
+
+            .product-item .btn-delete {
+                width: 100%;
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- HEADER -->
+        <header>
+            <h1>🔒 Admin Panel - Araria Mart</h1>
+            <p>Sirf aap product add / delete kar sakte hain</p>
+        </header>
+
+        <!-- ADD PRODUCT SECTION -->
+        <div class="admin-panel">
+            <h2>➕ Add New Product</h2>
+            <div class="admin-form">
+                <input type="text" id="newName" placeholder="Product Name *" />
+                <input type="number" id="newPrice" placeholder="Price (₹) *" />
+                <input type="text" id="newDetail" placeholder="Detail (Size, Qty) - optional" />
+                <input type="text" id="newImage" placeholder="Image URL (direct link) - optional" />
+                <button id="saveProductBtn">✅ Add Product</button>
+                <div id="addMsg" class="status-msg"></div>
+            </div>
+        </div>
+
+        <!-- ALL PRODUCTS SECTION -->
+        <div class="admin-panel">
+            <div class="product-list-header">
+                <h2>📦 All Products</h2>
+                <span class="product-count" id="productCount">0</span>
+            </div>
+            <div id="productList"></div>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- 📱 JAVASCRIPT - ADMIN PANEL                  -->
+    <!-- ============================================ -->
+    <script>
+        // ============================================
+        // 📥 JSONBin Setup - Yahan apna BIN_ID aur API_KEY daalein
+        // ============================================
+        const BIN_ID = "YOUR_BIN_ID_HERE";      // ← JSONBin se copy karein
+        const API_KEY = "YOUR_API_KEY_HERE";    // ← JSONBin se copy karein
+
+        // ============================================
+        // 📦 DEFAULT PRODUCTS (Pehli baar ke liye)
+        // ============================================
+        const defaultProducts = [
+            {
+                name: "Kaila (Banana)",
+                price: 60,
+                detail: "12 pcs",
+                image: "https://i.postimg.cc/3x5qQpZv/banana.png"
+            },
+            {
+                name: "Tiger Sarso Oil",
+                price: 200,
+                detail: "1 kg",
+                image: "https://i.postimg.cc/K8w6vqVj/mustard-oil.png"
+            },
+            {
+                name: "Fortune Oil",
+                price: 180,
+                detail: "1 kg",
+                image: "https://i.postimg.cc/s2d6hJhR/cooking-oil.png"
+            },
+            {
+                name: "Seb (Apple)",
+                price: 250,
+                detail: "1 kg",
+                image: "https://i.postimg.cc/3x5qQpZv/apple.png"
+            },
+            {
+                name: "Anaar (Pomegranate)",
+                price: 300,
+                detail: "1 kg",
+                image: "https://i.postimg.cc/K8w6vqVj/pomegranate.png"
+            },
+            {
+                name: "Surf Excel Detergent",
+                price: 150,
+                detail: "1 kg",
+                image: "https://i.postimg.cc/s2d6hJhR/detergent.png"
+            },
+            {
+                name: "Tiger Sarso Oil",
+                price: 2450,
+                detail: "14.3 kg",
+                image: "https://i.postimg.cc/K8w6vqVj/mustard-oil.png"
+            },
+            {
+                name: "Double Horse Chawal",
+                price: 75,
+                detail: "1 kg",
+                image: "https://i.postimg.cc/3x5qQpZv/rice.png"
+            },
+            {
+                name: "Double Horse Chawal",
+                price: 980,
+                detail: "25 kg",
+                image: "https://i.postimg.cc/3x5qQpZv/rice.png"
+            }
+        ];
+
+        let products = [];
+
+        // ============================================
+        // 📥 Load Products
+        // ============================================
+        async function loadProducts() {
+            try {
+                const res = await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}/latest`, {
+                    headers: { 'X-Master-Key': API_KEY }
+                });
+                const data = await res.json();
+
+                // Agar JSONBin empty hai toh default products use karein
+                if (data.record?.products && data.record.products.length > 0) {
+                    products = data.record.products;
+                } else {
+                    products = [...defaultProducts];
+                    await saveProducts();
+                }
+
+                displayProductList();
+                updateProductCount();
+                console.log("✅ Products loaded:", products.length);
+            } catch (error) {
+                console.log("❌ Load failed, using default:", error);
+                products = [...defaultProducts];
+                displayProductList();
+                updateProductCount();
+                showMsg('⚠️ Using default products. Check your internet connection.', 'error');
+            }
+        }
+
+        // ============================================
+        // 💾 Save Products
+        // ============================================
+        async function saveProducts() {
+            try {
+                await fetch(`https://api.jsonbin.io/v3/b/${BIN_ID}`, {
+                    method: 'PUT',
+                    headers: {
+                        'Content-Type': 'application/json',
+                        'X-Master-Key': API_KEY
+                    },
+                    body: JSON.stringify({ products })
+                });
+                console.log("✅ Products saved!");
+                showMsg('✅ Products saved successfully!', 'success');
+            } catch (error) {
+                console.log("❌ Save failed:", error);
+                showMsg('❌ Save failed! Check your internet.', 'error');
+            }
+        }
+
+        // ============================================
+        // 📋 Display Product List
+        // ============================================
+        function displayProductList() {
+            const list = document.getElementById("productList");
+            if (!list) return;
+            list.innerHTML = "";
+
+            if (!products || products.length === 0) {
+                list.innerHTML = `
+                    <div class="empty-state">
+                        <div class="icon">🛒</div>
+                        <p>No products yet. Add your first product above!</p>
+                    </div>
+                `;
+                return;
+            }
+
+            products.forEach((product, index) => {
+                const div = document.createElement("div");
+                div.className = "product-item";
+                div.innerHTML = `
+                    <div class="product-info">
+                        <span class="product-name">${product.name}</span>
+                        <span class="product-meta">
+                            <span class="product-price">₹${product.price}</span>
+                            ${product.detail ? ` • ${product.detail}` : ''}
+                        </span>
+                    </div>
+                    <button class="btn-delete" onclick="deleteProduct(${index})">🗑️ Delete</button>
+                `;
+                list.appendChild(div);
+            });
+        }
+
+        // ============================================
+        // 🔢 Update Product Count
+        // ============================================
+        function updateProductCount() {
+            const count = document.getElementById("productCount");
+            if (count) {
+                count.textContent = products.length;
+            }
+        }
+
+        // ============================================
+        // 🗑️ Delete Product
+        // ============================================
+        function deleteProduct(index) {
+            const productName = products[index]?.name || 'Product';
+            if (!confirm(`⚠️ Kya aap "${productName}" ko delete karna chahte hain?`)) return;
+
+            products.splice(index, 1);
+            saveProducts();
+            displayProductList();
+            updateProductCount();
+            showMsg(`🗑️ "${productName}" deleted successfully!`, 'success');
+        }
+
+        // ============================================
+        // ➕ Add Product
+        // ============================================
+        document.getElementById("saveProductBtn").addEventListener("click", function() {
+            const name = document.getElementById("newName").value.trim();
+            const price = parseInt(document.getElementById("newPrice").value);
+            const detail = document.getElementById("newDetail").value.trim();
+            let image = document.getElementById("newImage").value.trim();
+
+            // Validation
+            if (!name) {
+                showMsg('⚠️ Please enter product name!', 'error');
+                return;
+            }
+            if (!price || isNaN(price) || price <= 0) {
+                showMsg('⚠️ Please enter valid price!', 'error');
+                return;
+            }
+            if (!image) {
+                image = 'https://i.postimg.cc/1XqzK1gR/Screenshot-2026-07-07-17-44-18-94-2c94496c64eeaa7ef093c298145d7980.jpg';
+            }
+
+            const newProduct = {
+                name: name,
+                price: price,
+                detail: detail || 'No details',
+                image: image
+            };
+
+            products.push(newProduct);
+            saveProducts();
+            displayProductList();
+            updateProductCount();
+
+            // Clear fields
+            document.getElementById('newName').value = '';
+            document.getElementById('newPrice').value = '';
+            document.getElementById('newDetail').value = '';
+            document.getElementById('newImage').value = '';
+
+            showMsg(`✅ "${name}" added successfully! (Total: ${products.length} products)`, 'success');
+        });
+
+        // ============================================
+        // 📝 Show Message
+        // ============================================
+        function showMsg(text, type) {
+            const msg = document.getElementById('addMsg');
+            msg.textContent = text;
+            msg.className = `status-msg ${type}`;
+            msg.style.display = 'block';
+            setTimeout(() => {
+                msg.style.display = 'none';
+            }, 4000);
+        }
+
+        // ============================================
+        // 🚀 START
+        // ============================================
+        loadProducts();
+        console.log("✅ Admin panel loaded!");
+        console.log("🔒 Only you can add/delete products");
+    </script>
+</body>
+  </html>
