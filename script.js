@@ -207,9 +207,9 @@ const products = [
     {
     name: "Rohu Machhli",
     localName: "Rui / Rehu",
-    price: 250,
-    unit: "1kg",
-    weight: "1kg",
+    price: 190,
+    unit: "1 kg",
+    weight: "1 kg",
     quantityOptions: ["5kg", "10kg", "15kg", "20kg", "25kg", "30kg"],
     image: "https://dyimg77.exportersindia.com/product_images/bc-full/2026/1/15284727/fresh-rohu-fish-1769683737-8559906.jpeg",
     description: "Fresh Rohu machhli, Araria side mein commonly milne wali machhli."
@@ -219,8 +219,8 @@ const products = [
     name: "Katla Machhli",
     localName: "Katla",
     price: 200,
-    unit: "1kg",
-    weight: "1kg",
+    unit: "1 kg",
+    weight: "1 kg",
     quantityOptions: ["5kg", "10kg", "15kg", "20kg", "25kg", "30kg"],
     image: "https://www.naavfresh.com/products/Katla.webp",
     description: "Fresh Katla machhli."
@@ -229,9 +229,9 @@ const products = [
   {
     name: "Magur Machhli",
     localName: "Desi Magur",
-    price: 350,
-    unit: "1kg",
-    weight: "1kg",
+    price: 160,
+    unit: "1 kg",
+    weight: "1 kg",
     quantityOptions: ["5kg", "10kg", "15kg", "20kg", "25kg", "30kg"],
     image: "https://boliya.in/wp-content/uploads/2025/04/Magur-Mas.png",
     description: "Desi Magur, freshwater catfish."
@@ -240,9 +240,9 @@ const products = [
   {
     name: "Singhi Machhli",
     localName: "Singhi",
-    price: 350,
-    unit: "1kg",
-    weight: "1kg",
+    price: 400,
+    unit: "1 kg",
+    weight: "1 kg",
     quantityOptions: ["5kg", "10kg", "15kg", "20kg", "25kg", "30kg"],
     image: "https://cdn.dotpe.in/longtail/item_thumbnails/5462833/wF6gO8rV.webp",
     description: "Fresh Singhi machhli."
@@ -252,8 +252,8 @@ const products = [
     name: "Pangasius Machhli",
     localName: "Pangash / Basa",
     price: 180,
-    unit: "1kg",
-    weight: "1kg",
+    unit: "1 kg",
+    weight: "1 kg",
     quantityOptions: ["5kg", "10kg", "15kg", "20kg", "25kg", "30kg"],
     image: "https://www.stsnarao.com/wp-content/uploads/2020/01/pangasiusu.jpg",
     description: "Fresh Pangasius/Basa machhli."
@@ -263,8 +263,8 @@ const products = [
     name: "Tilapia Machhli",
     localName: "Telapia",
     price: 180,
-    unit: "1kg",
-    weight: "1kg",
+    unit: "1 kg",
+    weight: "1 kg",
     quantityOptions: ["5kg", "10kg", "15kg", "20kg", "25kg", "30kg"],
     image: "https://akm-img-a-in.tosshub.com/lingo/atbn/images/photo_gallery/202307/whatsapp-image-2023-07-14-at-14.111.jpg",
     description: "Fresh Tilapia machhli."
@@ -273,9 +273,9 @@ const products = [
   {
     name: "Koi Machhli",
     localName: "Koi",
-    price: 350,
-    unit: "1kg",
-    weight: "1kg",
+    price: 250,
+    unit: "1 kg",
+    weight: "1 kg",
     quantityOptions: ["5kg", "10kg", "15kg", "20kg", "25kg", "30kg"],
     image: "https://static.toiimg.com/thumb/116912199/116912199.jpg?height=746&imgsize=73020&resizemode=76&width=420",
     description: "Fresh Koi machhli."
@@ -284,9 +284,9 @@ const products = [
   {
     name: "Pabda Machhli",
     localName: "Pabda",
-    price: 450,
-    unit: "1kg",
-    weight: "1kg",
+    price: 300,
+    unit: "1 kg",
+    weight: "1 kg",
     quantityOptions: ["5kg", "10kg", "15kg", "20kg", "25kg", "30kg"],
     image: "https://www.bigbasket.com/media/uploads/p/l/40282124_1-fresho-pabda-fish.jpg",
     description: "Soft meat wali fresh Pabda machhli."
@@ -295,9 +295,9 @@ const products = [
   {
     name: "Ilish Machhli",
     localName: "Ilish",
-    price: 600,
-    unit: "1kg",
-    weight: "1kg",
+    price: 500,
+    unit: "1 kg",
+    weight: "1 kg",
     quantityOptions: ["5kg", "10kg", "15kg", "20kg", "25kg", "30kg"],
     image: "https://www.bigbasket.com/media/uploads/p/l/40282126_1-fresho-hilsa-fish.jpg",
     description: "Fresh Ilish/Hilsa machhli."
@@ -307,8 +307,8 @@ const products = [
     name: "Chingri",
     localName: "Jhinga / Chingri",
     price: 400,
-    unit: "1kg",
-    weight: "1kg",
+    unit: "1 kg",
+    weight: "1 kg",
     quantityOptions: ["5kg", "10kg", "15kg", "20kg", "25kg", "30kg"],
     image: "https://images.unsplash.com/photo-1565680018434-b513d5e5fd47",
     description: "Fresh Chingri/Jhinga."
