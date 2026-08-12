@@ -56,6 +56,111 @@ const products = [
         image: "https://i.postimg.cc/fT7zWKmj/file-00000000a6e071fab9cb7dfba1a4792f.png"
     },
     {
+    name: "Apple",
+    price: 180,
+    unit: "kg",
+    image: "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6",
+    description: "Fresh aur juicy seb, daily use ke liye."
+  },
+  {
+    name: "Banana",
+    price: 60,
+    unit: "dozen",
+    image: "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e",
+    description: "Fresh ripe banana, energy aur taste ke liye."
+  },
+  {
+    name: "Mango",
+    price: 120,
+    unit: "kg",
+    image: "https://images.unsplash.com/photo-1553279768-865429fa0078",
+    description: "Meetha aur juicy aam."
+  },
+  {
+    name: "Orange",
+    price: 100,
+    unit: "kg",
+    image: "https://images.unsplash.com/photo-1547514701-42782101795e",
+    description: "Juicy orange, vitamin C ka achha source."
+  },
+  {
+    name: "Papaya",
+    price: 60,
+    unit: "kg",
+    image: "https://images.unsplash.com/photo-1526318472351-c75fcf070305",
+    description: "Soft aur sweet papaya."
+  },
+  {
+    name: "Watermelon",
+    price: 35,
+    unit: "kg",
+    image: "https://images.unsplash.com/photo-1563114773-84221bd62daa",
+    description: "Fresh aur juicy tarbooz."
+  },
+  {
+    name: "Pineapple",
+    price: 80,
+    unit: "piece",
+    image: "https://images.unsplash.com/photo-1550258987-190a2d41a8ba",
+    description: "Sweet aur fresh pineapple."
+  },
+  {
+    name: "Guava",
+    price: 80,
+    unit: "kg",
+    image: "https://images.unsplash.com/photo-1536511132770-e5058c7e8c46",
+    description: "Fresh amrood, crunchy aur tasty."
+  },
+  {
+    name: "Grapes",
+    price: 100,
+    unit: "kg",
+    image: "https://images.unsplash.com/photo-1537640538966-79f369143f8f",
+    description: "Sweet aur fresh grapes."
+  },
+  {
+    name: "Pomegranate",
+    price: 160,
+    unit: "kg",
+    image: "https://images.unsplash.com/photo-1541344999736-83eca272f6fc",
+    description: "Fresh anar, juicy aur tasty."
+  },
+  {
+    name: "Papaya",
+    price: 60,
+    unit: "kg",
+    image: "https://images.unsplash.com/photo-1517282009859-f000ec3b26fe",
+    description: "Fresh aur naturally sweet papaya."
+  },
+  {
+    name: "Kiwi",
+    price: 240,
+    unit: "kg",
+    image: "https://images.unsplash.com/photo-1585059895524-72359e06133a",
+    description: "Fresh kiwi fruit."
+  },
+  {
+    name: "Strawberry",
+    price: 300,
+    unit: "kg",
+    image: "https://images.unsplash.com/photo-1464965911861-746a04b4bca6",
+    description: "Fresh aur sweet strawberry."
+  },
+  {
+    name: "Coconut",
+    price: 50,
+    unit: "piece",
+    image: "https://images.unsplash.com/photo-1580984969071-a8da5656c2e4",
+    description: "Fresh nariyal."
+  },
+  {
+    name: "Litchi",
+    price: 140,
+    unit: "kg",
+    image: "https://images.unsplash.com/photo-1621557379254-4b5f1c9d3e0f",
+    description: "Sweet aur juicy litchi."
+  },
+    {
         name: "Harpic",
         price: 49,
         detail: "Net Qty: 250 ml",
