@@ -204,125 +204,105 @@ const products = [
         detail: "5 kg",
         image: "https://i.postimg.cc/sfMTqNkM/Screenshot-2026-08-11-12-18-57-44-439a3fec0400f8974d35eed09a31f914.jpg"
     },
-    
     {
     name: "Rohu Machhli",
     localName: "Rui Machh",
     price: 250,
-    unit: "kg",
-    weightOptions: ["500g", "1kg", "2kg"],
+    unit: "1kg",
+    weight: "1kg",
+    quantityOptions: ["5kg", "10kg", "15kg", "20kg", "25kg", "30kg"],
     image: "https://images.unsplash.com/photo-1534766555764-ce878a5e3a2b",
-    description: "Fresh Rohu machhli, Bihar mein bahut popular."
+    description: "Fresh Rohu machhli."
   },
-
   {
     name: "Katla Machhli",
     localName: "Katla Machh",
     price: 200,
-    unit: "kg",
-    weightOptions: ["500g", "1kg", "2kg"],
-    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5",
-    description: "Fresh Katla machhli, bade size mein available."
+    unit: "1kg",
+    weight: "1kg",
+    quantityOptions: ["5kg", "10kg", "15kg", "20kg", "25kg", "30kg"],
+    image: "https://images.unsplash.com/photo-1534766555764-ce878a5e3a2b",
+    description: "Fresh Katla machhli."
   },
-
   {
     name: "Magur Machhli",
     localName: "Magur",
     price: 300,
-    unit: "kg",
-    weightOptions: ["250g", "500g", "1kg"],
+    unit: "1kg",
+    weight: "1kg",
+    quantityOptions: ["5kg", "10kg", "15kg", "20kg", "25kg", "30kg"],
     image: "https://images.unsplash.com/photo-1534766555764-ce878a5e3a2b",
-    description: "Local market mein pasand ki jane wali machhli."
+    description: "Fresh Magur machhli."
   },
-
   {
     name: "Singhi Machhli",
     localName: "Singhi",
     price: 350,
-    unit: "kg",
-    weightOptions: ["250g", "500g", "1kg"],
+    unit: "1kg",
+    weight: "1kg",
+    quantityOptions: ["5kg", "10kg", "15kg", "20kg", "25kg", "30kg"],
     image: "https://images.unsplash.com/photo-1534766555764-ce878a5e3a2b",
     description: "Fresh Singhi machhli."
   },
-
   {
     name: "Pangasius Machhli",
     localName: "Pangash",
     price: 180,
-    unit: "kg",
-    weightOptions: ["500g", "1kg", "2kg"],
-    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5",
-    description: "Soft meat wali freshwater fish."
+    unit: "1kg",
+    weight: "1kg",
+    quantityOptions: ["5kg", "10kg", "15kg", "20kg", "25kg", "30kg"],
+    image: "https://images.unsplash.com/photo-1534766555764-ce878a5e3a2b",
+    description: "Fresh Pangasius machhli."
   },
-
   {
     name: "Tilapia Machhli",
     localName: "Telapia",
     price: 180,
-    unit: "kg",
-    weightOptions: ["500g", "1kg", "2kg"],
+    unit: "1kg",
+    weight: "1kg",
+    quantityOptions: ["5kg", "10kg", "15kg", "20kg", "25kg", "30kg"],
     image: "https://images.unsplash.com/photo-1534766555764-ce878a5e3a2b",
-    description: "Fresh Tilapia, daily cooking ke liye."
+    description: "Fresh Tilapia machhli."
   },
-
   {
     name: "Koi Machhli",
     localName: "Koi",
     price: 350,
-    unit: "kg",
-    weightOptions: ["250g", "500g", "1kg"],
-    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5",
-    description: "Local style mein popular Koi machhli."
+    unit: "1kg",
+    weight: "1kg",
+    quantityOptions: ["5kg", "10kg", "15kg", "20kg", "25kg", "30kg"],
+    image: "https://images.unsplash.com/photo-1534766555764-ce878a5e3a2b",
+    description: "Fresh Koi machhli."
   },
-
   {
     name: "Pabda Machhli",
     localName: "Pabda",
     price: 450,
-    unit: "kg",
-    weightOptions: ["250g", "500g", "1kg"],
+    unit: "1kg",
+    weight: "1kg",
+    quantityOptions: ["5kg", "10kg", "15kg", "20kg", "25kg", "30kg"],
     image: "https://images.unsplash.com/photo-1534766555764-ce878a5e3a2b",
-    description: "Soft aur tasty freshwater fish."
+    description: "Fresh Pabda machhli."
   },
-
   {
     name: "Ilish Machhli",
-    localName: "Hilsa / Ilish",
+    localName: "Ilish",
     price: 350,
-    unit: "kg",
-    weightOptions: ["500g", "1kg", "1.5kg"],
-    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5",
-    description: "Popular Hilsa fish."
-  },
-
-  {
-    name: "Jhinga",
-    localName: "Chingri",
-    price: 400,
-    unit: "kg",
-    weightOptions: ["250g", "500g", "1kg"],
-    image: "https://images.unsplash.com/photo-1565680018434-b513d5e5fd47",
-    description: "Fresh Chingri/Jhinga."
-  },
-
-  {
-    name: "Kekra",
-    localName: "Crab / Kekra",
-    price: 750,
-    unit: "kg",
-    weightOptions: ["500g", "1kg"],
-    image: "https://images.unsplash.com/photo-1553659971-f012187b5e26",
-    description: "Fresh crab, market availability ke hisab se."
-  },
-
-  {
-    name: "Bangda",
-    localName: "Bangda Machh",
-    price: 600,
-    unit: "kg",
-    weightOptions: ["500g", "1kg"],
+    unit: "1kg",
+    weight: "1kg",
+    quantityOptions: ["5kg", "10kg", "15kg", "20kg", "25kg", "30kg"],
     image: "https://images.unsplash.com/photo-1534766555764-ce878a5e3a2b",
-    description: "Fresh Bangda fish."
+    description: "Fresh Ilish machhli."
+  },
+  {
+    name: "Chingri",
+    localName: "Jhinga",
+    price: 400,
+    unit: "1kg",
+    weight: "1kg",
+    quantityOptions: ["5kg", "10kg", "15kg", "20kg", "25kg", "30kg"],
+    image: "https://images.unsplash.com/photo-1534766555764-ce878a5e3a2b",
+    description: "Fresh Chingri/Jhinga."
   },
     {
         name: "Fortune Mustard Oil",
