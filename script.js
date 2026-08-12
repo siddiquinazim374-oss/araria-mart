@@ -288,7 +288,7 @@ const products = [
     unit: "1 kg",
     weight: "1 kg",
     quantityOptions: ["5kg", "10kg", "15kg", "20kg", "25kg", "30kg"],
-    image: "https://www.bigbasket.com/media/uploads/p/l/40282124_1-fresho-pabda-fish.jpg",
+    image: https://i.postimg.cc/MH3Lwytr/d0beae6d582c2c501f326e440c880b08.jpg
     description: "Soft meat wali fresh Pabda machhli."
   },
 
@@ -299,7 +299,7 @@ const products = [
     unit: "1 kg",
     weight: "1 kg",
     quantityOptions: ["5kg", "10kg", "15kg", "20kg", "25kg", "30kg"],
-    image: "https://www.bigbasket.com/media/uploads/p/l/40282126_1-fresho-hilsa-fish.jpg",
+    image: https://i.postimg.cc/BbJ3bcT1/8b4a40c4557fc29fc2e7612aa9a929dd.jpg
     description: "Fresh Ilish/Hilsa machhli."
   },
 
