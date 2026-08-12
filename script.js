@@ -282,28 +282,6 @@ const products = [
   },
 
   {
-    name: "Pabda Machhli",
-    localName: "Pabda",
-    price: 300,
-    unit: "1 kg",
-    weight: "1 kg",
-    quantityOptions: ["5kg", "10kg", "15kg", "20kg", "25kg", "30kg"],
-    image: https://i.postimg.cc/MH3Lwytr/d0beae6d582c2c501f326e440c880b08.jpg
-    description: "Soft meat wali fresh Pabda machhli."
-  },
-
-  {
-    name: "Ilish Machhli",
-    localName: "Ilish",
-    price: 500,
-    unit: "1 kg",
-    weight: "1 kg",
-    quantityOptions: ["5kg", "10kg", "15kg", "20kg", "25kg", "30kg"],
-    image: https://i.postimg.cc/BbJ3bcT1/8b4a40c4557fc29fc2e7612aa9a929dd.jpg
-    description: "Fresh Ilish/Hilsa machhli."
-  },
-
-  {
     name: "Chingri",
     localName: "Jhinga / Chingri",
     price: 400,
