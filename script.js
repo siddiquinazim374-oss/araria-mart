@@ -58,91 +58,91 @@ const products = [
     {
     name: "Apple",
     price: 180,
-    unit: "kg",
+    unit: "1 kg",
     image: "https://images.unsplash.com/photo-1560806887-1e4cd0b6cbd6",
     description: "Fresh aur juicy seb, daily use ke liye."
   },
   {
     name: "Banana",
     price: 60,
-    unit: "dozen",
+    unit: "12 ps",
     image: "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e",
     description: "Fresh ripe banana, energy aur taste ke liye."
   },
   {
     name: "Mango",
     price: 120,
-    unit: "kg",
+    unit: "2 kg",
     image: "https://images.unsplash.com/photo-1553279768-865429fa0078",
     description: "Meetha aur juicy aam."
   },
   {
     name: "Orange",
     price: 100,
-    unit: "kg",
+    unit: "1 kg",
     image: "https://images.unsplash.com/photo-1547514701-42782101795e",
     description: "Juicy orange, vitamin C ka achha source."
   },
   {
     name: "Papaya",
     price: 60,
-    unit: "kg",
+    unit: "1 kg",
     image: "https://images.unsplash.com/photo-1526318472351-c75fcf070305",
     description: "Soft aur sweet papaya."
   },
   {
     name: "Watermelon",
     price: 35,
-    unit: "kg",
+    unit: "1 kg",
     image: "https://images.unsplash.com/photo-1563114773-84221bd62daa",
     description: "Fresh aur juicy tarbooz."
   },
   {
     name: "Pineapple",
     price: 80,
-    unit: "piece",
+    unit: "1 piece",
     image: "https://images.unsplash.com/photo-1550258987-190a2d41a8ba",
     description: "Sweet aur fresh pineapple."
   },
   {
     name: "Guava",
     price: 80,
-    unit: "kg",
+    unit: "1 kg",
     image: "https://images.unsplash.com/photo-1536511132770-e5058c7e8c46",
     description: "Fresh amrood, crunchy aur tasty."
   },
   {
     name: "Grapes",
     price: 100,
-    unit: "kg",
+    unit: "1 kg",
     image: "https://images.unsplash.com/photo-1537640538966-79f369143f8f",
     description: "Sweet aur fresh grapes."
   },
   {
     name: "Pomegranate",
     price: 160,
-    unit: "kg",
+    unit: "1 kg",
     image: "https://images.unsplash.com/photo-1541344999736-83eca272f6fc",
     description: "Fresh anar, juicy aur tasty."
   },
   {
     name: "Papaya",
     price: 60,
-    unit: "kg",
+    unit: "1 kg",
     image: "https://images.unsplash.com/photo-1517282009859-f000ec3b26fe",
     description: "Fresh aur naturally sweet papaya."
   },
   {
     name: "Kiwi",
     price: 240,
-    unit: "kg",
+    unit: "1 kg",
     image: "https://images.unsplash.com/photo-1585059895524-72359e06133a",
     description: "Fresh kiwi fruit."
   },
   {
     name: "Strawberry",
     price: 300,
-    unit: "kg",
+    unit: "1 kg",
     image: "https://images.unsplash.com/photo-1464965911861-746a04b4bca6",
     description: "Fresh aur sweet strawberry."
   },
@@ -156,7 +156,7 @@ const products = [
   {
     name: "Litchi",
     price: 140,
-    unit: "kg",
+    unit: "1 kg",
     image: "https://images.unsplash.com/photo-1621557379254-4b5f1c9d3e0f",
     description: "Sweet aur juicy litchi."
   },
@@ -204,6 +204,126 @@ const products = [
         detail: "5 kg",
         image: "https://i.postimg.cc/sfMTqNkM/Screenshot-2026-08-11-12-18-57-44-439a3fec0400f8974d35eed09a31f914.jpg"
     },
+    
+    {
+    name: "Rohu Machhli",
+    localName: "Rui Machh",
+    price: 250,
+    unit: "kg",
+    weightOptions: ["500g", "1kg", "2kg"],
+    image: "https://images.unsplash.com/photo-1534766555764-ce878a5e3a2b",
+    description: "Fresh Rohu machhli, Bihar mein bahut popular."
+  },
+
+  {
+    name: "Katla Machhli",
+    localName: "Katla Machh",
+    price: 200,
+    unit: "kg",
+    weightOptions: ["500g", "1kg", "2kg"],
+    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5",
+    description: "Fresh Katla machhli, bade size mein available."
+  },
+
+  {
+    name: "Magur Machhli",
+    localName: "Magur",
+    price: 300,
+    unit: "kg",
+    weightOptions: ["250g", "500g", "1kg"],
+    image: "https://images.unsplash.com/photo-1534766555764-ce878a5e3a2b",
+    description: "Local market mein pasand ki jane wali machhli."
+  },
+
+  {
+    name: "Singhi Machhli",
+    localName: "Singhi",
+    price: 350,
+    unit: "kg",
+    weightOptions: ["250g", "500g", "1kg"],
+    image: "https://images.unsplash.com/photo-1534766555764-ce878a5e3a2b",
+    description: "Fresh Singhi machhli."
+  },
+
+  {
+    name: "Pangasius Machhli",
+    localName: "Pangash",
+    price: 180,
+    unit: "kg",
+    weightOptions: ["500g", "1kg", "2kg"],
+    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5",
+    description: "Soft meat wali freshwater fish."
+  },
+
+  {
+    name: "Tilapia Machhli",
+    localName: "Telapia",
+    price: 180,
+    unit: "kg",
+    weightOptions: ["500g", "1kg", "2kg"],
+    image: "https://images.unsplash.com/photo-1534766555764-ce878a5e3a2b",
+    description: "Fresh Tilapia, daily cooking ke liye."
+  },
+
+  {
+    name: "Koi Machhli",
+    localName: "Koi",
+    price: 350,
+    unit: "kg",
+    weightOptions: ["250g", "500g", "1kg"],
+    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5",
+    description: "Local style mein popular Koi machhli."
+  },
+
+  {
+    name: "Pabda Machhli",
+    localName: "Pabda",
+    price: 450,
+    unit: "kg",
+    weightOptions: ["250g", "500g", "1kg"],
+    image: "https://images.unsplash.com/photo-1534766555764-ce878a5e3a2b",
+    description: "Soft aur tasty freshwater fish."
+  },
+
+  {
+    name: "Ilish Machhli",
+    localName: "Hilsa / Ilish",
+    price: 350,
+    unit: "kg",
+    weightOptions: ["500g", "1kg", "1.5kg"],
+    image: "https://images.unsplash.com/photo-1544551763-46a013bb70d5",
+    description: "Popular Hilsa fish."
+  },
+
+  {
+    name: "Jhinga",
+    localName: "Chingri",
+    price: 400,
+    unit: "kg",
+    weightOptions: ["250g", "500g", "1kg"],
+    image: "https://images.unsplash.com/photo-1565680018434-b513d5e5fd47",
+    description: "Fresh Chingri/Jhinga."
+  },
+
+  {
+    name: "Kekra",
+    localName: "Crab / Kekra",
+    price: 750,
+    unit: "kg",
+    weightOptions: ["500g", "1kg"],
+    image: "https://images.unsplash.com/photo-1553659971-f012187b5e26",
+    description: "Fresh crab, market availability ke hisab se."
+  },
+
+  {
+    name: "Bangda",
+    localName: "Bangda Machh",
+    price: 600,
+    unit: "kg",
+    weightOptions: ["500g", "1kg"],
+    image: "https://images.unsplash.com/photo-1534766555764-ce878a5e3a2b",
+    description: "Fresh Bangda fish."
+  },
     {
         name: "Fortune Mustard Oil",
         price: 180,
